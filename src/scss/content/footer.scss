@@ -1,0 +1,14 @@
+// Footer
+
+footer {
+  position: fixed;
+  bottom: 4vh;
+  left: 4vw;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  text-align: left;
+  font-size: 0.85rem;
+  line-height: 1em;
+  max-width: calc(92vh - 5rem);
+  color: $darktext;
+}

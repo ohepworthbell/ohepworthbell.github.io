@@ -1,0 +1,116 @@
+.slide__wrapper {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  scroll-snap-align: start;
+  background: transparent no-repeat center;
+  background-size: cover;
+  box-shadow: 0 10px 50px -20px rgba(#000, 0.3);
+  box-sizing: border-box;
+  padding: 0 10%;
+
+  &__icon {
+    display: block;
+    margin: 0 auto 1.5rem;
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+
+    &--recognote {
+      width: 8em;
+      height: 4.5em
+    }
+  }
+
+  &__name {
+    font-size: calc(2rem + 2vw);
+    max-width: 9em;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin: 0 auto 1rem;
+    text-align: center;
+  }
+
+  // z-index (for video backgrounds)
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  // Delays
+  object {
+    animation: slideFadeInContent 4.5s;
+    animation-fill-mode: backwards;
+  }
+
+  img {
+    animation: fadeInContent 0.4s 3.5s;
+    animation-fill-mode: backwards;
+  }
+
+  h1,
+  h2,
+  h3 {
+    animation: fadeInContent 0.4s 3.6s;
+    animation-fill-mode: backwards;
+  }
+
+  p {
+    animation: fadeInContent 0.4s 3.7s;
+    animation-fill-mode: backwards;
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button,
+  .down {
+    animation: fadeInContent 0.4s 3.8s;
+    animation-fill-mode: backwards;
+  }
+}
+
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+    transform: translate(0, 3rem);
+  }
+}
+
+@keyframes slideFadeInContent {
+  0% {
+    opacity: 0;
+    transform: translate(0, 7rem);
+    width: 13em;
+    height: 13em;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  75% {
+    transform: translate(0, 7rem);
+    width: 13em;
+    height: 13em;
+  }
+
+  90% {
+    transform: none;
+    width: 10em;
+    height: 10em;
+  }
+}

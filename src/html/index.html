@@ -1,0 +1,95 @@
+
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>Portfolio of Oliver Hepworth-Bell</title>
+  <meta name="description" content="A portfolio of projects, contributions and experiments">
+
+  <link href="main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
+
+  <link rel="preload" href="/img/loading.svg" as="image" />
+  <link rel="prefetch" content="/img/loading-white.svg" as="image" />
+</head>
+<body>
+<div id="root">
+  <header class="header">
+    <h1 class="header__name">Portfolio</h1>
+  </header>
+
+  <main class="slide__wrapper scrollable">
+    <section class="slide" aria-label="Project" style="background-image: url(./img/projects/wearegrowth.jpg)">
+      <article>
+        <figure>
+          <object type="image/svg+xml" data="./img/projects/wearegrowth-logo.svg" alt="Wolf logo" class="slide__icon" width="160" height="160" aria-label="We Are Growth wolf logo"></object>
+        </figure>
+
+        <h1 class="slide__name" data-splittrigger>
+          <span data-split="We are">We are</span>
+          <span data-split="growth">growth</span>
+        </h1>
+
+        <p class="slide__content">I make things, and I <span class="emoji emoji--heart" role="img" aria-label="Heart">&#9829;</span > JavaScript. But sometimes you just don't need it - this page doesn't use any. Scroll down to see more...</p>
+
+        <a href="#view-more" title="View the app" class="down">&darr;</a>
+      </article>
+    </section>
+
+    <a name="view-more"></a>
+
+    <section class="slide" aria-label="Project" style="background-image: url(./img/projects/recognote.jpg)">
+      <article>
+        <figure>
+          <img src="./img/projects/recognote-logo.svg" alt="Recognote logo" class="slide__icon slide__icon--recognote" />
+        </figure>
+
+        <h1 class="slide__name" data-splittrigger data-split="Recognote">Recognote</h1>
+
+        <p class="slide__content">A simple web app for musicians to practice pitch. Available as an offline PWA for smartphones, tablets and desktop</p>
+
+        <a href="http://recognote.wearegrowth.com/quiz/" target="_blank" rel="noopener" title="View the app" class="button">Practice your pitch</a>
+      </article>
+    </section>
+
+    <section class="slide videobg" aria-label="Project">
+      <video width="960" height="540" muted autoplay loop>
+        <source src="./video/donkey.webm" type="video/webm">
+        <source src="./video/donkey.mp4" type="video/mp4">
+      </video>
+
+      <article class="slide__content">
+        <h1 class="slide__name" data-splittrigger>
+          <span data-split="Catch the">Catch the</span>
+          <span data-split="donkey">donkey</span>
+        </h1>
+
+        <p>A fun canvas-based game of chase. Avoid the bandits for as long as possible! Works with a mouse or on touch-screen devices</p>
+
+        <a href="/catch-the-donkey/" target="_blank" rel="noopener" title="Play the game" class="button">Play the game</a>
+      </article>
+    </section>
+
+    <section class="slide" aria-label="Project">
+      <article class="slide__content">
+        <h1 class="slide__name" data-splittrigger>
+          <span data-split="More">More</span>
+          <span data-split="projects">projects</span>
+        </h1>
+
+        <p>More projects coming soon...</p>
+      </article>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  Copyright &copy; 2020, all rights reserved
+</footer>
+</body>
+</html>

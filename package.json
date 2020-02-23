@@ -1,0 +1,41 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "description": "Portfolio of Oliver Hepworth-Bell",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --watch",
+    "build": "webpack --mode=production",
+    "deploy": "gh-pages -b master -d build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oliver Hepworth-Bell",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "prettier": "1.19.1",
+    "sass-loader": "^8.0.2",
+    "stylelint": "^13.2.0",
+    "stylelint-config-standard": "^20.0.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "gh-pages": "^2.2.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohepworthbell/ohepworthbell.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ohepworthbell/ohepworthbell.github.io/issues"
+  },
+  "homepage": "https://ohepworthbell.github.io"
+}

@@ -1,0 +1,29 @@
+// Header styling
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 4vh 4vw;
+  box-sizing: border-box;
+  z-index: 3;
+
+  &__name {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 1em;
+    font-weight: $semibold;
+    color: $darktext;
+  }
+
+  &__socialmedia {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    line-height: 1em;
+  }
+}

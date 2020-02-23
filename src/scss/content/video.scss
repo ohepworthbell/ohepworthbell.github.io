@@ -1,0 +1,20 @@
+$video-aspect-ratio: 16/9;
+
+.videobg {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    object-fit: cover;
+    mix-blend-mode: overlay;
+  }
+}

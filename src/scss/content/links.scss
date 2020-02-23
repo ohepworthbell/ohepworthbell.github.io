@@ -1,0 +1,47 @@
+// Links
+a {
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $colour;
+  }
+}
+
+// Down arrows
+.down {
+  display: inline-block;
+  font-size: 2em;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  font-weight: $light;
+  padding: 0.5rem;
+  transition: transform 0.15s;
+
+  &:hover {
+    transform: translate(0, 4px);
+    text-decoration: none;
+  }
+}
+
+// Buttons
+.button {
+  display: inline-block;
+  padding: 0.8em 1.6em;
+  line-height: 1.4em;
+  border-radius: 2em;
+  background: $colour;
+  color: #fff;
+  transition: background-color 0.15s;
+  margin: 1.5rem 0;
+
+  &:hover {
+    background-color: darken($colour, 7%);
+    text-decoration: none;
+  }
+
+  &:active {
+    background-color: darken($colour, 12%);
+  }
+}

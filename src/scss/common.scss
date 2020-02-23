@@ -1,0 +1,57 @@
+$font_size: 17px;
+
+// Common layout
+html {
+  background: $background;
+  color: $text;
+  font-size: $font_size;
+}
+
+body {
+  background: $background;
+  color: $text;
+  font-family: $font;
+  font-weight: $regular;
+  font-size: 1rem;
+  line-height: 1.7em;
+  padding: 0;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+// Smooth scrolling
+html,
+body,
+.scrollable {
+  scroll-behavior: smooth;
+  animation: disableScroll 3s;
+}
+
+// Disable smooth scrolling for those with vestibular disorders
+@media (prefers-reduced-motion: reduce) {
+  html,
+  body,
+  .scrollable {
+    scroll-behavior: auto;
+  }
+}
+
+// Disabling scroll (hacky, but quick)
+a[name="view-more"] {
+  animation: preventPartialScroll 3s;
+}
+
+@keyframes disableScroll {
+  0%,
+  100% {
+    overflow: hidden;
+  }
+}
+
+@keyframes preventPartialScroll {
+  0%,
+  100% {
+    position: fixed;
+    top: 0;
+  }
+}
