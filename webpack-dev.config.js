@@ -9,14 +9,14 @@ module.exports = {
   entry: ['./src/scss/style.scss'],
   mode: 'development',
   plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Portfolio',
-      template: 'src/html/index.html',
-      inject: false
-    }),
+    new webpack.ProgressPlugin(),
     new MiniCssExtractPlugin(),
     new CleanWebpackPlugin(),
-    new webpack.ProgressPlugin(),
+    new HtmlWebpackPlugin({
+      template: 'src/html/index.html',
+      inject: false,
+      hotreload: '<script src="main.js"></script>'
+    }),
     new CopyPlugin([
       {
         from: 'src/images/',
@@ -44,13 +44,11 @@ module.exports = {
       }
     ]
   },
-  output: {
-    path: path.resolve(__dirname, './build/')
-  },
   devServer: {
     contentBase: path.join(__dirname, './build/'),
     compress: true,
     port: 9000,
+    hot: true,
     stats: {
       colors: true,
       hash: false,
@@ -68,5 +66,5 @@ module.exports = {
       publicPath: true
     }
   },
-  watch: false
+  watch: true
 };

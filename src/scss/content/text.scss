@@ -1,0 +1,13 @@
+// General text content
+p {
+
+  a {
+    text-decoration: underline;
+    text-decoration-color: $colour;
+
+    &:hover {
+      transition: background-color 0.15s;
+      background-color: $colour;
+    }
+  }
+}
