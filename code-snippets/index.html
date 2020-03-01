@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>Code snippet generator</title>
+<link href="main.css" rel="stylesheet"></head>
+<body>
+  <main class="viewer">
+    <section class="form__window">
+      <h1>Code snippets</h1>
+
+      <form onsubmit="return false">
+        <fieldset>
+          <legend>Your information</legend>
+  
+          <label>
+            <input type="text" value="" placeholder=" " name="social-handle" id="js-input-name">
+            <span>Your social media handle</span>
+          </label>
+        </fieldset>
+  
+        <fieldset>
+          <legend>Your code</legend>
+  
+          <label>
+            <textarea placeholder=" " id="js-input-code"></textarea>
+            <span>Code</span>
+          </label>
+
+          <hr>
+  
+          <label>
+            <select id="js-input-codetype">
+              <option value="none" selected>None</option>
+              <option value="css">CSS/SASS/SCSS</option>
+              <option value="js">JavaScript</option>
+              <option value="php">PHP</option>
+              <option value="py">Python</option>
+              <option value="rust">Rust</option>
+            </select>
+            <span>Syntax highlighting</span>
+          </label>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="preview__window" aria-label="Code snippet preview">
+      <aside aria-role="window" class="preview__modal">
+        <div class="preview__modal__head">
+          <span class="dot dot--red" aria-hidden="true"></span>
+          <span class="dot dot--yellow" aria-hidden="true"></span>
+          <span class="dot dot--green" aria-hidden="true"></span>
+
+          <div class="name" aria-label="Name of repo owner" id="js-output-name"></div>
+        </div>
+
+        <div class="preview__modal__output">
+          <pre id="js-output-code"></pre>
+        </div>
+      </aside>
+    </section>
+  </main>
+<script type="text/javascript" src="main.js"></script></body>
+</html>
