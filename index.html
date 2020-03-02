@@ -9,12 +9,11 @@
   <title>Portfolio of Oliver Hepworth-Bell</title>
   <meta name="description" content="A portfolio of projects, contributions and experiments">
 
+  <link href="main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
   <link rel="preload" href="/img/loading.svg" as="image" />
   <link rel="prefetch" content="/img/loading-white.svg" as="image" />
-
-  <!-- Favicons (I know, un-neat AF, but they are dynamically inserted, so...) -->
-<link rel="shortcut icon" href="/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png"><link rel="manifest" href="/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="Portfolio"><link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167x167.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" sizes="1024x1024" href="/apple-touch-icon-1024x1024.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Portfolio"><meta name="msapplication-TileColor" content="#121822"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="msapplication-config" content="/browserconfig.xml"><link href="main.css" rel="stylesheet"></head>
+</head>
 <body>
 <header class="header">
   <h1 class="header__name">Portfolio</h1>
@@ -24,7 +23,7 @@
   <section class="slide" aria-label="Project" style="background-image: url(./img/projects/wearegrowth.jpg)">
     <article>
       <figure>
-        <object type="image/svg+xml" data="./img/projects/wearegrowth-logo.svg" role="img" alt="Wolf logo" class="slide__icon" width="160" height="160" aria-label="'We Are Growth' wolf logo"></object>
+        <object type="image/svg+xml" data="./img/projects/wearegrowth-logo.svg" alt="Wolf logo" class="slide__icon" width="160" height="160" aria-label="We Are Growth wolf logo"></object>
       </figure>
 
       <h1 class="slide__name" data-splittrigger>
@@ -32,9 +31,9 @@
         <span data-split="growth">growth</span>
       </h1>
 
-      <p class="slide__content">I make things, and I <span class="emoji emoji--heart" role="img" aria-label="Heart">&#9829;</span > JavaScript. But sometimes you just don't need it - this page doesn't use any (seriously, check the source). Scroll down to see more...</p>
+      <p class="slide__content">I make things, and I <span class="emoji emoji--heart" role="img" aria-label="Heart">&#9829;</span > JavaScript. But sometimes you just don't need it - <a href="view-source:https://ohepworthbell.github.io/" title="View page source" target="_blank" rel="noopener nofollow">this page doesn't use any</a>. Scroll down to see more...</p>
 
-      <a href="#view-more" title="Scroll down" class="down">
+      <a href="#view-more" title="View the app" class="down">
         <span role="img" aria-label="Down arrow">&darr;</span>
       </a>
     </article>
@@ -101,15 +100,7 @@
   ###   #####   ##########          #########     #########
   ###     ###     ######              #####        ######
 
-... Well, apart from Google Analytics...
 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159416552-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-159416552-1');
-</script>
 </body>
 </html>
