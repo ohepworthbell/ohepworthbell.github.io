@@ -7,8 +7,7 @@
   <meta name="format-detection" content="telephone=no">
 
   <title>Code snippet generator</title>
-  <link href="main.css" rel="stylesheet">
-</head>
+<link href="main.css" rel="stylesheet"></head>
 <body>
   <main class="viewer">
     <section class="form__window">
@@ -36,11 +35,12 @@
   
           <label>
             <select id="js-input-codetype">
-              <option value="none" selected>None</option>
-              <option value="css">CSS/SASS/SCSS</option>
-              <option value="js">JavaScript</option>
+              <option value="javascript" selected>JavaScript</option>
+              <option value="css">CSS</option>
+              <option value="scss">SCSS</option>
               <option value="php">PHP</option>
-              <option value="py">Python</option>
+              <option value="python">Python</option>
+              <option value="java">Java</option>
               <option value="rust">Rust</option>
             </select>
             <span>Syntax highlighting</span>
@@ -65,14 +65,5 @@
       </aside>
     </section>
   </main>
-<script type="text/javascript" src="main.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159416552-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-159416552-1');
-</script>
-</body>
+<script type="text/javascript" src="main.js"></script></body>
 </html>

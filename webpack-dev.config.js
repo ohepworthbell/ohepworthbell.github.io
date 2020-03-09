@@ -14,8 +14,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: 'src/html/index.html',
-      inject: false,
-      hotreload: '<script src="main.js"></script>'
+      inject: true
     }),
     new CopyPlugin([
       {
